@@ -2,162 +2,209 @@
 <html lang="en">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0QFH7W91DX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-0QFH7W91DX');
+
+    </script>
+
+    <meta name="description" content="Flux är ett modeföretag inriktat på eleganta handväskor">
+    <meta name="keywords"
+        content="handväskor, eleganta handväskor, mode, handväska, elegant handväska, stilfull handväska, stilfulla väskor, damväskor, damhandväskor, kvalitetsväskor">
+    <meta name="author" content="Modehuset Flux">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webbshop</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Modehuset Flux - Webbshop</title>
+    <link rel="stylesheet" href="css/webbshop.css">
 </head>
 
 <body>
-    <header class="pageheader">
-        <img src="images/logo.png" class="logo">
-        <nav>
-            <ul class="menu">
-                <li>
-                    <a href="index.html" target="newsbox">STARTSIDA</a>
-                </li>
-                <li>
-                    <a href="omoss.html" target="newsbox">OM OSS</a>
-                </li>
-                <li>
-                    <a href="designers.html" target="newsbox">DESIGNERS</a>
-                </li>
-                <li>
-                    <a href="webbshop.html" target="newsbox">WEBBSHOP</a>
-                </li>
-                <li>
-                    <a href="detaljsida.html" target="newsbox">BÄSTSÄLJARE</a>
-                </li>
-                <li>
-                    <a href="kontaktaoss.html" target="newsbox">KONTAKT</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <br>
-    <h1 class="center">VÅRA PRODUKTER</h1>
-    <br>
-    <div class="container">
-        <div class="product">
-            <img src="images/bag3.png" alt="Bag 1">
-            <h2>L'avenue - Black tote bag</h2>
-            <br>
-            <h3>1990 kr</h3>
-            <button onclick="addToCart(1)">KÖP</button>
-        </div>
-        <div class="rating">
-            <input type="radio" name="rating" id="star5" value="5">
-            <label for="star5">&#9733;</label>
-            <input type="radio" name="rating" id="star4" value="4">
-            <label for="star4">&#9733;</label>
-            <input type="radio" name="rating" id="star3" value="3">
-            <label for="star3">&#9733;</label>
-            <input type="radio" name="rating" id="star2" value="2">
-            <label for="star2">&#9733;</label>
-            <input type="radio" name="rating" id="star1" value="1">
-            <label for="star1">&#9733;</label>
-        </div>
-    </div>
-    <br>
-    <br>
-    <div class="container">
-        <div class="product">
-            <img src="images/bag2.png" alt="Bag 2">
-            <h2>S/P - Everyday crossbody</h2>
-            <br>
-            <h3>1490 kr</h3>
-            <button onclick="addToCart(2)">KÖP</button>
-        </div>
-        <div class="rating">
-            <input type="radio" name="rating2" id="star52" value="5">
-            <label for="star5">&#9733;</label>
-            <input type="radio" name="rating2" id="star42" value="4">
-            <label for="star4">&#9733;</label>
-            <input type="radio" name="rating2" id="star32" value="3">
-            <label for="star3">&#9733;</label>
-            <input type="radio" name="rating2" id="star22" value="2">
-            <label for="star2">&#9733;</label>
-            <input type="radio" name="rating2" id="star12" value="1">
-            <label for="star1">&#9733;</label>
-        </div>
-    </div>
-        <br>
-        <br>
-        <div class="container">
-            <div class="product">
-                <img src="images/bag8.png" alt="Bag 3">
-                <h2>L'avenue - Cassie evening bag</h2>
-                <br>
-                <h3>1290 kr</h3>
-                <button onclick="addToCart(3)">KÖP</button>
-            </div>
+
+<header class="pageheader">
+    <img src="images/logo.png" class="logo">
+    <nav>
+        <ul class="menu">
+            <li>
+                <a href="index.html" target="newsbox">STARTSIDA</a>
+            </li>
+            <li>
+                <a href="omoss.html" target="newsbox">OM OSS</a>
+            </li>
+            <li>
+                <a href="designers.html" target="newsbox">DESIGNERS</a>
+            </li>
+            <li>
+                <a href="webbshop.html" target="newsbox">WEBBSHOP</a>
+            </li>
+            <li>
+                <a href="detaljsida.html" target="newsbox">BÄSTSÄLJARE</a>
+            </li>
+            <li>
+                <a href="kontaktaoss.html" target="newsbox">KONTAKT</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<br>
+<br>
+<br>
+
+<h1 class="center">VÅRA PRODUKTER</h1>
+
+<main>
+    <div class="flexcontainer">
+
+        <div class="product" id="product1">
+            <div class="imagediv"><img src="images/bag3.png" height="100%"></div>
+            <h3>L'avenue - Black tote bag</h3>
+            <p>Material: 100 % läder</p>
+            <p class="price">1990 kr</p>
             <div class="rating">
-                <input type="radio" name="rating" id="star5" value="5">
-                <label for="star5">&#9733;</label>
-                <input type="radio" name="rating" id="star4" value="4">
-                <label for="star4">&#9733;</label>
-                <input type="radio" name="rating" id="star3" value="3">
-                <label for="star3">&#9733;</label>
-                <input type="radio" name="rating" id="star2" value="2">
-                <label for="star2">&#9733;</label>
-                <input type="radio" name="rating" id="star1" value="1">
-                <label for="star1">&#9733;</label>
+                <input type="radio" name="rating1" id="star5_1" value="5">
+                <label for="star5_1">&#9733;</label>
+                <input type="radio" name="rating1" id="star4_1" value="4">
+                <label for="star4_1">&#9733;</label>
+                <input type="radio" name="rating1" id="star3_1" value="3">
+                <label for="star3_1">&#9733;</label>
+                <input type="radio" name="rating1" id="star2_1" value="2">
+                <label for="star2_1">&#9733;</label>
+                <input type="radio" name="rating1" id="star1_1" value="1">
+                <label for="star1_1">&#9733;</label>
             </div>
+            <br>
+            <button onclick="addToCart(1, 'Black tote bag', 1990)">KÖP</button>
         </div>
-            <br>
-            <br>
-            <div class="container">
-                <div class="product">
-                    <img src="images/bag5.png" alt="Bag 4">
-                    <h2>Dupont Bags - The perfect tote</h2>
-                    <br>
-                    <h3>2190 kr</h3>
-                    <button onclick="addToCart(4)">KÖP</button>
-                </div>
-                <div class="rating">
-                    <input type="radio" name="rating" id="star5" value="5">
-                    <label for="star5">&#9733;</label>
-                    <input type="radio" name="rating" id="star4" value="4">
-                    <label for="star4">&#9733;</label>
-                    <input type="radio" name="rating" id="star3" value="3">
-                    <label for="star3">&#9733;</label>
-                    <input type="radio" name="rating" id="star2" value="2">
-                    <label for="star2">&#9733;</label>
-                    <input type="radio" name="rating" id="star1" value="1">
-                    <label for="star1">&#9733;</label>
-                </div>
+
+        <div class="product" id="product2">
+            <div class="imagediv"><img src="images/bag2.png" height="100%"></div>
+            <h3>S/P - Everyday crossbody</h3>
+            <p>Material: 100 % läder</p>
+            <p class="price">1490 kr</p>
+            <div class="rating">
+                <input type="radio" name="rating2" id="star5_2" value="5">
+                <label for="star5_2">&#9733;</label>
+                <input type="radio" name="rating2" id="star4_2" value="4">
+                <label for="star4_2">&#9733;</label>
+                <input type="radio" name="rating2" id="star3_2" value="3">
+                <label for="star3_2">&#9733;</label>
+                <input type="radio" name="rating2" id="star2_2" value="2">
+                <label for="star2_2">&#9733;</label>
+                <input type="radio" name="rating2" id="star1_2" value="1">
+                <label for="star1_2">&#9733;</label>
             </div>
-                <br>
-                <br>
-                <div class="container">
-                    <div class="product">
-                        <img src="images/bag7.png" alt="Bag 5" width="350" height="350">
-                        <h2>Dupont Bags - Mini crossbody</h2>
-                        <br>
-                        <h3>1490 kr</h3>
-                        <button onclick="addToCart(1)">KÖP</button>
-                    </div>
-                    <div class="rating">
-                        <input type="radio" name="rating" id="star5" value="5">
-                        <label for="star5">&#9733;</label>
-                        <input type="radio" name="rating" id="star4" value="4">
-                        <label for="star4">&#9733;</label>
-                        <input type="radio" name="rating" id="star3" value="3">
-                        <label for="star3">&#9733;</label>
-                        <input type="radio" name="rating" id="star2" value="2">
-                        <label for="star2">&#9733;</label>
-                        <input type="radio" name="rating" id="star1" value="1">
-                        <label for="star1">&#9733;</label>
-                    </div>
-                </div>
+            <br>
+            <button onclick="addToCart(1, 'Everyday crossbody', 1490)">KÖP</button>
+        </div>
 
-                    <script>
-                        function addToCart(productId) {
-                            alert("Lagt till plagg " + productId + " i kundkorgen.");
-                            // Här kan du lägga till logik för att hantera kundkorgen, till exempel lägga till produkter i en array.
-                        }
-                    </script>
+        <div class="product" id="product3">
+            <div class="imagediv"><img src="images/bag8.png" height="100%"></div>
+            <h3>L'avenue - Cassie evening bag</h3>
+            <p>Material: 100 % läder</p>
+            <p class="price">1290 kr</p>
+            <div class="rating">
+                <input type="radio" name="rating3" id="star5_3" value="5">
+                <label for="star5_3">&#9733;</label>
+                <input type="radio" name="rating3" id="star4_3" value="4">
+                <label for="star4_3">&#9733;</label>
+                <input type="radio" name="rating3" id="star3_3" value="3">
+                <label for="star3_3">&#9733;</label>
+                <input type="radio" name="rating3" id="star2_3" value="2">
+                <label for="star2_3">&#9733;</label>
+                <input type="radio" name="rating3" id="star1_3" value="1">
+                <label for="star1_3">&#9733;</label>
+            </div>
+            <br>
+            <button onclick="addToCart(1, 'Cassie evening bag', 1290)">KÖP</button>
+        </div>
 
+        <div class="product" id="product4">
+            <div class="imagediv"><img src="images/bag5.png" height="100%"></div>
+            <h3>Dupont Bags - The perfect tote</h3>
+            <p>Material: 100 % läder</p>
+            <p class="price">2190 kr</p>
+            <div class="rating">
+                <input type="radio" name="rating4" id="star5_4" value="5">
+                <label for="star5_4">&#9733;</label>
+                <input type="radio" name="rating4" id="star4_4" value="4">
+                <label for="star4_4">&#9733;</label>
+                <input type="radio" name="rating4" id="star3_4" value="3">
+                <label for="star3_4">&#9733;</label>
+                <input type="radio" name="rating4" id="star2_4" value="2">
+                <label for="star2_4">&#9733;</label>
+                <input type="radio" name="rating4" id="star1_4" value="1">
+                <label for="star1_4">&#9733;</label>
+            </div>
+            <br>
+            <button onclick="addToCart(1, 'The perfect tote', 2190)">KÖP</button>
+        </div>
+
+        <div class="product" id="product5">
+            <div class="imagediv"><img src="images/bag5.png" height="100%"></div>
+            <h3>Dupont Bags - Mini crossbody</h3>
+            <p>Material: 100 % läder</p>
+            <p class="price">1490 kr</p>
+            <div class="rating">
+                <input type="radio" name="rating5" id="star5_5" value="5">
+                <label for="star5_5">&#9733;</label>
+                <input type="radio" name="rating5" id="star4_5" value="4">
+                <label for="star4_5">&#9733;</label>
+                <input type="radio" name="rating5" id="star3_5" value="3">
+                <label for="star3_5">&#9733;</label>
+                <input type="radio" name="rating5" id="star2_5" value="2">
+                <label for="star2_5">&#9733;</label>
+                <input type="radio" name="rating5" id="star1_5" value="1">
+                <label for="star1_5">&#9733;</label>
+            </div>
+            <br>
+            <button onclick="addToCart(1, 'Mini crossbody', 1490)">KÖP</button>
+        </div>
+        <div id="cart" class="cart"></div>
+    </div>
+</main>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<footer>
+    <div class="contact">
+        <h3>KONTAKT</h3>
+        E-post: info@modehusetflux.se
+        <br>Tel: 08- 123 456 789
+        <br>Adress: Hamngatan 58
+        <br>Postnr: 111 44 Stockholm
+    </div>
+
+    <div class="footerlink">
+        <ul>
+            <li><a href="index.html">STARTSIDA</a></li>
+            <li><a href="omoss.html">OM OSS</a></li>
+            <li><a href="designers.html">DESIGNERS</a></li>
+        </ul>
+    </div>
+
+    <div class="footerlink">
+        <ul>
+            <li><a href="webbshop.html">WEBBSHOP</a></li>
+            <li><a href="detaljsida.html">BÄSTSÄLJARE</a></li>
+            <li><a href="kontaktaoss.html">KONTAKT</a></li>
+        </ul>
+    </div>
+    <img src="images/logo.png" width="200" height="200">
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
 
 </body>
 

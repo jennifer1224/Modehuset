@@ -1,0 +1,185 @@
+.flexcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+}
+
+.imagediv{
+    height: 350px;
+    width: 350px;
+
+}
+
+.product
+{
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+}
+ul
+{
+    margin: 10;
+    padding: 0;
+    list-style-type: none;
+
+}
+li{
+    margin: 10px;
+    
+}
+.cart{
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.cartbutton{
+    border: 1px solid black;
+    padding: 2px;
+    margin: 2px;
+    border-radius: 5px;
+}
+
+.cartbutton{
+    text-decoration: none;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.rating input[type="radio"] {
+    display: none;
+}
+.rating label {
+    cursor: pointer;
+    font-size: 24px;
+    color: #ccc;
+}
+.rating input[type="radio"]:checked + label {
+    color: black;
+}
+.product button {
+    margin-left: auto;
+    background-color: black;
+    color: white;
+    padding: 8px 8px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+/* HÄR BÖRJAR BODY, HEADER, FOOTER */
+
+body {
+    padding: 0;
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.startpageimage {
+    width: 100vw;
+}
+
+.pageheader {
+    background-color: black;
+    width: 100vw;
+    height: 375px;
+   
+}
+.logo {
+    width: 300px;
+    text-align: center;
+    margin: auto;
+}
+
+.menu {
+    list-style-type: none; /* Ta bort punktlistan */
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block; /* Visa menyelementen bredvid varandra */
+    margin-right: 3px; /* Justera avståndet mellan menyelementen */
+}
+
+.menu li a {
+    text-decoration: none; /* Ta bort understrykningen från länkarna */
+    color: black; /* Ändra textfärgen till vit */
+    font-size: 16px; /* Justera textstorleken efter behov */
+}
+
+.menu li a:hover {
+    color: black; /* Ändra färgen när du svävar över länkarna */
+}
+
+a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: black;
+}
+
+li {
+    display: inline;
+    text-align: center;
+}
+
+h1 {
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    margin: 40px;
+}
+
+.text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black
+    margin-left: 40px; 
+}
+
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.center {
+    text-align: center;
+}
+
+.contactform {
+    display: inline-block;
+    text-align: center;
+}
+
+.footerlink {
+    display: inline-block;
+    vertical-align: top; /* Justera om du vill justera vertikal placering */
+    margin-right: 20px; /* Justera utrymmet mellan länksektionerna */
+}
+
+.footerlink ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footerlink ul li {
+    margin-bottom: 0px; /* Justera utrymmet mellan länkarna */
+}
