@@ -43,7 +43,7 @@ function showCart()
         cartHTML += "<a href='#' class='cartbutton' onclick='subtractQuantity(" + i + ")'>-</a>"
         cartHTML += "<a href='#' class='cartbutton' onclick='addQuantity(" + i + ")'>+</a>"  
         cartHTML += cart[i].quantity + " st " + cart[i].name + " - " + cart[i].price * cart[i].quantity
-        cartHTML += "</li>"
+        cartHTML += "</li> <br> <br>"
         sum += cart[i].price * cart[i].quantity
     }
     document.getElementById("cart").innerHTML = cartHTML + "<li>" + "Summa: " + sum + " kr </li></ul>"
